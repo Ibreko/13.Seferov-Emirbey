@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #c2c2c2;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: 350px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h2 {
+    color: #333;
+}
+
+.input-container {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-container>* {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 4px;
+}
+
+input[type="number"],
+select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#result {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    background-color: #45a049;
+}
+
+#aboutUs__title {
+    margin: 0px;
+    background-color: white;
+    padding: 40px 10%;
+}
+
+.about-image {
+    width: 80%;
+}
+
+main {
+    padding: 30px 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.map__box{
+    width: 100%;
+    iframe{
+        width: 100%;
+        min-height: 70vh;
+    }
+}
+@media only screen and (max-width:770px) {
+    .about-image {
+        width: 100%
+    }
+
+    #aboutUs__title {
+        font-size: 16px;
+        padding: 20px 10%;
+    }
+
+    header nav ul li a {
+        font-size: 14px;
+    }
+}
